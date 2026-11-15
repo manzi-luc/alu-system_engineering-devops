@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Lost in space</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #1b2a49, #05070f);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 { font-size: 7rem; margin: 0; color: #ffd166; }
+    p { font-size: 1.3rem; margin: 10px 0 30px; }
+    .astronaut {
+      font-size: 6rem;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-8deg); }
+      50% { transform: translateY(-25px) rotate(8deg); }
+    }
+    a {
+      background: #ffd166;
+      color: #05070f;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover { background: #fff; }
+  </style>
+</head>
+<body>
+  <div class="astronaut">🧑‍🚀</div>
+  <h1>404</h1>
+  <p>Ceci n'est pas une page</p>
+  <p>Houston, we are lost. This page doesn't exist.</p>
+  <a href="/">Take me home</a>
+</body>
+</html>
+
