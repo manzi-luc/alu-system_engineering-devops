@@ -17,7 +17,7 @@ backend web_servers
     mode http
     balance roundrobin
     server 7331-web-01 35.177.198.139:80 check
-    server 7331-web-02 WEB02_REAL_IP:80 check
+    server 7331-web-02 	3.10.22.172:80 check
 EOF
 fi
 haproxy -c -f /etc/haproxy/haproxy.cfg && service haproxy restart
