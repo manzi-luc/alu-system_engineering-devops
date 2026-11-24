@@ -6,4 +6,7 @@ sed -i 's/^#\?user .*;/user nginx;/' /etc/nginx/nginx.conf
 sed -i 's/\b80\b/8080/g' /etc/nginx/sites-available/default
 pkill apache2
 pkill -x nginx
-service nginx start
+sleep 1
+touch /run/nginx.pid
+chown -R nginx:nginx /run/nginx.pid /var/log/nginx /var/lib/nginx
+su -s /bin/bash nginx -c "nginx"
